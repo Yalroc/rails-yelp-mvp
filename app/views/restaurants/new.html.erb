@@ -1,0 +1,45 @@
+<h1 class="text-center">Add Restaurant</h1>
+<%= simple_form_for @restaurant do |f| %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div>
+        <%= f.input :name %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div>
+        <%= f.input :address %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div>
+        <%= f.input :phone_number %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-sm-offset-2">
+      <div>
+        <%= f.input :category %>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-4 col-xs-offset-4 col-sm-2 col-sm-offset-5">
+      <%= f.submit "Add Restaurant", class: "btn-primary submit-button" %>
+    </div>
+  </div>
+</div>
+<div class="text-center blue-title">
+  <%= link_to "Back to Restaurants", restaurants_path %>
+</div>
+
+
+
+
+<% end %>
